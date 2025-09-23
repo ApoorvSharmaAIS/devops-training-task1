@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Average Marks</title>
+</head>
+<body>
+    <h1>Average Marks Per Student</h1>
+    <table border="1">
+        <tr>
+            <th>Student</th>
+            <th>Average Marks</th>
+        </tr>
+        {% for name, avg_marks in results %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ "%.2f"|format(avg_marks) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
