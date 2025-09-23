@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/devops-training-task1
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/task1
